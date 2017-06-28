@@ -1,0 +1,10 @@
+<div ng-controller="ApiListCtrl as vm">
+  <uib-accordion>
+    <uib-accordion-group ng-repeat="api in vm.apis" is-open="$first"
+      heading="{{api.title}}"
+      panel-class="{{api.method === 'POST' && 'panel-primary'}} {{api.method === 'GET' && 'panel-success'}} {{api.method === 'PUT' && 'panel-warning'}} {{api.method === 'DELETE' && 'panel-danger'}} bootstrap-panel accordion-panel">
+      <p><code>{{api.method}} {{api.url}}</code></p>
+      <p>Request Body</p>
+      <pre>{{api.body | json}}</pre>
+  </uib-accordion>
+</div>
