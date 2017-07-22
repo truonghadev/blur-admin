@@ -1,14 +1,18 @@
 
 .modal-content {
-  border-radius: 5px;
+  // border-radius: 5px;
+  border-radius: 0;
+  box-shadow: none;
   border: none;
   color: $dropdown-text;
 }
 
 .modal-header {
   color: $label-text;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  // border-top-left-radius: 5px;
+  // border-top-right-radius: 5px;
   .modal-title {
     color: $dropdown-text;
   }

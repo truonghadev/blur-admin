@@ -155,6 +155,7 @@ input.search-input {
 
 .table .pagination {
   margin: 4px 0 -12px 0;
+  border-radius: 0;
   a {
     cursor: pointer;
   }
@@ -300,14 +301,16 @@ th {
 
 .pagination > li:first-of-type > a,
 .pagination > li:first-of-type > span{
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 0;
+  // border-top-left-radius: 5px;
+  // border-bottom-left-radius: 5px;
 }
 
 .pagination > li:last-of-type > a,
 .pagination > li:last-of-type > span{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 0;
+  // border-top-right-radius: 5px;
+  // border-bottom-right-radius: 5px;
 }
 
 .pagination > .active > a,

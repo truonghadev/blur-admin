@@ -43,7 +43,8 @@
   color: $default-text;
   @include placeholderStyle($default-text, 0.7);
   border: 1px solid $input-border;
-  border-radius: 5px;
+  // border-radius: 5px;
+  border-radius: 0;
   background-color: $input-background;
   box-shadow: none;
   &:focus {
@@ -59,6 +60,7 @@ select.form-control {
 
 textarea.form-control {
   height: 96px;
+  max-width: 100%;
 }
 
 .form-inline {
@@ -121,7 +123,8 @@ textarea.form-control {
     display: inline-block;
     width: 84px;
     overflow: hidden;
-    border-radius: 6px;
+    // border-radius: 6px;
+    border-radius: 0;
     box-sizing: border-box;
 
     /* this fixes the overflow:hidden in Chrome */
@@ -181,7 +184,8 @@ textarea.form-control {
 }
 
 .bootstrap-switch {
-  border-radius: 5px;
+  border-radius: 0;
+  // border-radius: 5px;
   border: 1px solid $default;
   transition: border-color ease-in-out .7s, box-shadow ease-in-out .7s;
   &:focus {
@@ -504,7 +508,9 @@ label.custom-input-danger {
 }
 
 .dropdown-menu {
-  border-radius: 5px;
+  border-radius: 0;
+  box-shadow: none;
+  // border-radius: 5px;
 }
 
 .bootstrap-select.btn-group {
@@ -528,12 +534,15 @@ label.custom-input-danger {
       border-color: $border;
     }
     > .btn {
-      border-radius: 5px 5px 0 0;
+      border-radius: 0;
+      // border-radius: 5px 5px 0 0;
     }
     .dropdown-menu.open {
       border: 1px solid $border-light;
       border-top: none;
-      border-radius: 0 0 5px 5px;
+      border-radius: 0;
+      box-shadow: none;
+      // border-radius: 0 0 5px 5px;
     }
   }
   &.with-search.open .btn-default + .dropdown-menu {
@@ -554,7 +563,8 @@ label.custom-input-danger {
   color: $default-text;
   background-color: $input-background;
   border: 1px solid $input-border;
-  border-radius: 5px;
+  // border-radius: 5px;
+  border-radius: 0;
   box-shadow: none;
   max-width: 100%;
   font-size: 14px;
@@ -565,7 +575,8 @@ label.custom-input-danger {
     width: 100%;
   }
   .tag {
-    border-radius: 3px;
+    // border-radius: 3px;
+    border-radius: 0;
     font-weight: $font-normal;
     font-size: 11px;
     padding: 4px 8px;
@@ -576,7 +587,8 @@ label.custom-input-danger {
   input {
     background-color: $input-background;
     border: 1px solid $input-border;
-    border-radius: 5px;
+    // border-radius: 5px;
+    border-radius: 0;
     @include placeholderStyle($default-text, 0.8);
     line-height: 22px;
     font-size: 11px;
@@ -592,6 +604,8 @@ label.custom-input-danger {
 
 .progress {
   background: $progress-background;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .progress-bar-primary {
@@ -615,13 +629,15 @@ label.custom-input-danger {
 }
 
 .input-group > span.addon-left {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  // border-top-left-radius: 5px;
+  // border-bottom-left-radius: 5px;
+  border-radius: 0;
 }
 
 .input-group > span.addon-right {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  // border-top-right-radius: 5px;
+  border-radius: 0;
+  // border-bottom-right-radius: 5px;
 }
 
 .with-primary-addon:focus {

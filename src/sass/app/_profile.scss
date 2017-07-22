@@ -132,7 +132,8 @@ $snPadding: 8px;
 a.sn-link {
   transition: none;
   display: block;
-  border-radius: 5px;
+  border-radius: 0;
+  // border-radius: 5px;
   background-color: transparent;
   padding: $snPadding;
   color: $default-text;

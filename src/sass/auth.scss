@@ -19,7 +19,8 @@ $text-color: #ffffff;
 .form-control, .form-control:focus {
   @include placeholderStyle($text-color, 0.9);
   background-color: rgba(0, 0, 0, .4);
-  border-radius: 5px;
+  border-radius: 0;
+  // border-radius: 5px;
   color: $text-color;
 }
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
@@ -36,7 +37,8 @@ $text-color: #ffffff;
 .auth-block {
   width: 540px;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 0;
+  // border-radius: 5px;
   @include bg-translucent-dark(0.55);
   color: #fff;
   padding: 32px;
